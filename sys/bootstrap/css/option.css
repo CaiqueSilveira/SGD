@@ -1,0 +1,25 @@
+.form-control {
+    width: 50%;
+    height: 27px;
+    }
+    .form-control.input-sm {
+    width: 67%;
+    }
+    #listar-usuario_filter {
+    text-align: left;
+    }
+       .btn-dark {
+    color: #fff;
+    background-color: #003e70;
+    }
+    .btn-dark:hover {
+    background-color: #00355f;
+    color: #fff;
+    }
+    #listar-usuario_filter {
+    text-align: right;
+    margin-bottom: 10px;
+    }
+    .nsd {
+    text-align: center;
+    }
