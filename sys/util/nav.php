@@ -3,7 +3,7 @@
     <header class="main-header">
         <!--<div id="loader"></div> -->
         <!-- LOGO -->
-        <a href="/sgd/sys/view/index.php" class="logo">
+        <a href="/sys/view/index.php" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini" style="font-size: 15px"><b>SGD</b></span>
             <!-- logo for regular state and mobile devices -->
@@ -16,12 +16,11 @@
             <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
                 <span class="sr-only">Alternar a navegação</span>
             </a>
-            <div style="float: right; width: 231px; margin-right: 5px;">
-                <form method="get" action="/sgd/sys/view/divida/lista.php" class="form-side" style="margin-left: -250px;">
-                    <input name="q" id="search" placeholder="Procurar..." type="text" required="">
-                    <button type="submit" class="btn1 btn" style="margin-top: -4px; margin-left: -5px;">
-                        <i class="fa fa-search" style="color:#428bca;"></i></button>
-                </form>
+               <div style="float: right; width: 231px; margin-right: 5px;">
+                
+                   .
+                       
+                
             </div>
 
             <div class="navbar-custom-menu">
@@ -29,14 +28,14 @@
                     <!-- DROPDOWN USUÁRIO -->
 
                     <li class="dropdown user user-menu">
-                        <a href="/sgd/sys/view/usuario/senha.php" class="dropdown-toggle">
+                        <a href="/sys/view/usuario/senha.php" class="dropdown-toggle">
                             <i class="glyphicon glyphicon-user"></i>
                             <span>
                                 <?php echo utf8_encode($_SESSION['usuarioNome']); ?></span>
                         </a>
                     </li>
                     <li>
-                        <a href="/sgd/sys/secure/destroy.php">
+                        <a href="/sys/secure/destroy.php">
                             <i class="glyphicon glyphicon-off"> </i>
                         </a>
                     </li>
@@ -58,7 +57,7 @@
                 <li class=" <?php if ($page == 'index') {
                                 echo 'active';
                             } ?>">
-                    <a href="/sgd/sys/view/index.php">
+                    <a href="/sys/view/index.php">
                         <i class="fa fa-home"></i> <span style="font-weight: bold;">Página Inicial</span>
                     </a>
                 </li>
@@ -73,8 +72,8 @@
                         <i class="fa fa-angle-left pull-right"></i>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="/sgd/sys/view/cliente/cadastrar.php"><i class="fa fa-user-o"></i>Cadastrar Clientes</a></li>
-                        <li><a href="/sgd/sys/view/cliente/lista.php"><i class="fa fa-list"></i>Listar Clientes</a></li>
+                        <li><a href="/sys/view/cliente/cadastrar.php"><i class="fa fa-user-o"></i>Cadastrar Clientes</a></li>
+                        <li><a href="/sys/view/cliente/lista.php"><i class="fa fa-list"></i>Listar Clientes</a></li>
                     </ul>
                 </li>
                 <!-- /CADASTRO CLIENTE-->
@@ -87,8 +86,24 @@
                         <i class="fa fa-angle-left pull-right"></i>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="/sgd/sys/view/divida/cadastrar.php"><i class="fa fa-user-o"></i> Cadastrar Dívidas</a></li>
-                        <li><a href="/sgd/sys/view/divida/lista.php"><i class="fa fa-list"></i> Listar Dívidas</a></li>
+                        <li><a href="/sys/view/divida/cadastrar.php"><i class="fa fa-user-o"></i> Cadastrar Dívidas</a></li>
+                        <li><a href="/sys/view/divida/lista.php"><i class="fa fa-list"></i> Listar Dívidas</a></li>
+                    </ul>
+                </li>
+                <!-- /CADASTRO DIVIDA -->
+                
+                <!-- CADASTRO DIVIDA -->
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-book"></i>
+                        <span style="font-weight: bold;">Relatórios</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                   
+                        <li><a href="/sys/view/relatorio/imprime.php"><i class="fa fa-book"></i> Dívidas a Receber</a></li>
+                        <li><a href="/sys/view/relatorio/pagas.php"><i class="fa fa-book"></i> Dívidas Pagas</a></li>
+                        
                     </ul>
                 </li>
                 <!-- /CADASTRO DIVIDA -->
@@ -104,8 +119,8 @@
                             <i class="fa fa-angle-left pull-right"></i>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="/sgd/sys/view/usuario/cadastrar.php"><i class="fa fa-user-o"></i>Cadastrar Usuário</a></li>
-                            <li><a href="/sgd/sys/view/usuario/lista.php"><i class="fa fa-list"></i>Listar Usuários</a></li>
+                            <li><a href="/sys/view/usuario/cadastrar.php"><i class="fa fa-user-o"></i>Cadastrar Usuário</a></li>
+                            <li><a href="/sys/view/usuario/lista.php"><i class="fa fa-list"></i>Listar Usuários</a></li>
                         </ul>
                     </li>
                     <!-- /CADASTRO USUARIO -->
